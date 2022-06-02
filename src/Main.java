@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        System.out.println("Hello world!\n");
         System.out.println("Hello\n");
         System.out.println("Roxana\n");
 
@@ -39,6 +39,8 @@ public class Main {
         d1 = 2;
         e1 = 8;
         System.out.println( a1 + b1 / c1 * d1 - e1 % c1 );
+        System.out.println("\n");
+
 
 
 
@@ -53,11 +55,13 @@ public class Main {
         System.out.println(o);
         System.out.println(p);
 
+        System.out.println("\n");
+
 
 
         System.out.println("La steaua care-a rasarit\n" + "E o cale atat de lunga\n" + "Ca mii de ani i-au trebuit\n" + "Luminii sa ne-ajunga\n" +"\n" + "Poate de mult s-a stins în drum\n" + "În depărtări albastre,\n" + "Iar raza ei abia acum\n" + "Luci vederii noastre,");
 
-
+        System.out.println("test");
 
     }
 }
