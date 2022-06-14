@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class arithmetic{
-    public static void main(String[] args) {
+    public void calculatearithmetic () {
         Scanner numbers = new Scanner(System.in);
         int total = 0;
         int grade;
@@ -15,6 +15,7 @@ class arithmetic{
         }
         average = total / 3;
         System.out.println("Your average is "+average);
+
 
     }
 }

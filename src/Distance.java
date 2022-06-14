@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Distance {
-    public static void main(String[] args) {
+    public void calculatedistance() {
         Scanner Distance = new Scanner(System.in);
         System.out.println(" Write your distance in inches, please ");
         double inches = Distance.nextDouble();
