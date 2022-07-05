@@ -1,9 +1,6 @@
-
-
- import javax.swing.*;
- import java.util.Scanner;
-
 public class LogicalOperators {
+
+
     /* 3.In clasa LogicalOp, creati o metoda de tip int, care sa se numeasca checkBiggerNumber(), si sa primeasca doua int-uri ca si
        parametrii. Folosind if - else, verificati in interiorul metode care numar este mai mare, dintre cele doua valori care va vin ca
        si parametrii, si returnati numarul mai mare. */
@@ -41,14 +38,12 @@ public class LogicalOperators {
     }
 
 
-
-
-        // 6. Creati o metoda de tip String, care sa primeasca un parametru de tip int.
-        // Daca numarul primit este mai mare de 8, SAU egal cu 6, atunci sa se returneze
-        // “The amount of snow this winter was(cm):
-        // “ si numarul.
-        // Daca nu, sa printeze “The forecast snow is(cm):” si numarul. Apelati metoda in main() pentru a verifica daca
-        // functioneaza.
+    // 6. Creati o metoda de tip String, care sa primeasca un parametru de tip int.
+    // Daca numarul primit este mai mare de 8, SAU egal cu 6, atunci sa se returneze
+    // “The amount of snow this winter was(cm):
+    // “ si numarul.
+    // Daca nu, sa printeze “The forecast snow is(cm):” si numarul. Apelati metoda in main() pentru a verifica daca
+    // functioneaza.
 
 
     public String Verifynumber1(int number1) {
@@ -143,21 +138,199 @@ public class LogicalOperators {
         } else return no3;
 
     }
-}
+     /*LABORATOR 4
+     1. Creati o metoda in clasa LogicalOp, care sa primeasca un numar ca si parametru.
+    Metoda sa verifice numarul primit, si sa afiseze in consola o numaratoare pana la 100, pornind de la numarul primit
+    ca si parametru. Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza*/
+
+    public void Printtohundred(int x) {
+        for (int i = x; i <= 100; i++) {
+
+            System.out.println(i);
+        }
+
+
+    }
+
+//  2. Creati o metoda in clasa LogicalOp, care sa primeasca un numar ca si parametru. Metoda sa verifice numrul primit,
+//  si sa afiseze in consola o numaratoare pana la -100, pornind de la numarul primit ca si parametru. Atentie la crearea
+//  tipului metodei, deoarece metoda afiseaza, nu returneaza.
+
+    public int Printtohundred2(float x1) {
+
+        for (float i1 = x1; i1 <= -100; i1++) {
+
+            System.out.println(i1);
+        }
+        return 0;
+
+    }
+
+
+    // 3. Creati o metoda in clasa LogicalOp, care sa primeasca doi parametrii de tip numar.
+    //Metoda sa afiseze o numaratoare intre cele doua numere primite, pornind de la primul parametru primit,
+    //pana la cel de-al doilea(ex: daca int x e primul parametru iar int y  este cel de-al doilea, numaratoarea
+    //sa se faca de la x, la y.
+
+
+    public void countBetweentwonumbers(int number1, int number2) {
+        for (int i = number1; i <= number2; i++) {
+
+            System.out.println(i);
+
+        }
+
+        for (int i = number1; i >= number2; i--) {
+
+            System.out.println(i);
+
+        }
+
+    }
+
+
+    /*4. Creati o metoda in clasa LogicalOp, care sa primeasca doi parametrii de tip numar. Metoda trebuie sa verifice
+    care dintre cele doua numere este mai mare, si sa execute o numaratoare crescatoare de la cel mai mic la cel mai mare.
+    (ex: daca int x e primul parametru iar int y  este cel de-al doilea, daca x  este mai mare decat y,  atunci numaratoarea
+    sa fie de la y la x).
+     Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza*/
+
+
+    public void Printfromnr1tonr2(int nr1, int nr2) {
+        if (nr1 < nr2) {
+
+            for (int i = nr1; i <= nr2; i++) {
+
+                System.out.println(i);
+            }
+
+        } else if (nr2 < nr1) {
+
+            for (int i = nr2; i <= nr1; i++) {
+
+                System.out.println(i);
+            }
+        }
+
+    }
+
+    //5. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.
+    public void displayEvenNo() {
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    //6. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
+    public void displayUnevenNo (){
+        for(int i = 0;i <= 100;i++ ){
+            if(i % 2 != 0){
+                System.out.println(i);
+            }
+        }
+    }
+
+     /*7. Creati o metoda in clasa LogicalOp care sa primeasca un parametru de tip numar. Metoda sa adune toate
+     numerele pana la 100, pornind de la numarul primit ca si parametru, iar la final sa returneze rezultatul.
+      Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza. */
+
+    public int getSum(int x){
+        int sum = 0;
+        for (int i=x ; i <= 100; i++){
+
+            sum = (sum + i);
+
+        }
+        return sum;
+    }
+
+
+    /*8. Creati o metoda in clasa LogicalOp care sa primeasca un parametru de tip numar.
+     Metoda sa adune toate numerele pana la 100, pornind de la numarul primit ca si parametru, si sa calculeze media
+      numerelor. La final, metoda sa returneze media. */
+
+    public int getAverage (int x){
+        int sum = 0;
+        int counter = 0;
+
+        for(int i = x; i <= 100; i++){
+            sum += i;
+            counter++;
+        }
+        return sum/counter;
+    }
+
+    /*9. Creati o metoda in clasa LogicalOp care sa afiseze urmatorul tipar:
+
+*******
+
+******
+
+*****
+
+****
+
+***
+
+**
+
+*
+
+
+
+     */
+    public void printStars() {
+        String star = "*";
+        for (int j = 0; j < 7; j++) {
+            for (int i = 7 - j; i >= 1; i--) {
+                System.out.print(star);
+            }
+            System.out.println();
+        }
+    }
+
+
+    }
 
 
 
 
-//
- // Facut in clasa
-    /* Given a number, if it’s equal to or higher than 2 and equal to or lower than 8, print the number
-       public int Verifynumber(int inputnumber) {
-        if (inputnumber >= 2 && inputnumber <= 8) {
-            return inputnumber;
-        } else {
-            return 0;
 
-     }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*5.r Creati o metoda care sa primeasca un parametru de tip array de string-uri, populat cu valori,
+    si un parametru de tip String. Metoda sa verifice daca valoarea string-ului primit se regaseste in array-ul primit,
+     iar daca da sa returneze true iar daca nu, sa returneze false.  Apelati metoda in main() pentru a verifica
+     daca functioneaza.*/
+
+    /*public boolean isValueinarray(String[]array,String value){
+        int i;
+        for ( i= 0; i < array.length; i++);{
+            if(array[i].equals(value)){
+                return true;
+            }
+        }
+    }*/
+
+
+
+
+
 
 
 
