@@ -138,7 +138,7 @@ public class LogicalOperators {
         } else return no3;
 
     }
-     /*LABORATOR 4
+     /*LABORATOR 4 FOR
      1. Creati o metoda in clasa LogicalOp, care sa primeasca un numar ca si parametru.
     Metoda sa verifice numarul primit, si sa afiseze in consola o numaratoare pana la 100, pornind de la numarul primit
     ca si parametru. Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza*/
@@ -224,9 +224,9 @@ public class LogicalOperators {
     }
 
     //6. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
-    public void displayUnevenNo (){
-        for(int i = 0;i <= 100;i++ ){
-            if(i % 2 != 0){
+    public void displayUnevenNo() {
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 != 0) {
                 System.out.println(i);
             }
         }
@@ -236,9 +236,9 @@ public class LogicalOperators {
      numerele pana la 100, pornind de la numarul primit ca si parametru, iar la final sa returneze rezultatul.
       Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza. */
 
-    public int getSum(int x){
+    public int getSum(int x) {
         int sum = 0;
-        for (int i=x ; i <= 100; i++){
+        for (int i = x; i <= 100; i++) {
 
             sum = (sum + i);
 
@@ -251,32 +251,32 @@ public class LogicalOperators {
      Metoda sa adune toate numerele pana la 100, pornind de la numarul primit ca si parametru, si sa calculeze media
       numerelor. La final, metoda sa returneze media. */
 
-    public int getAverage (int x){
+    public int getAverage(int x) {
         int sum = 0;
         int counter = 0;
 
-        for(int i = x; i <= 100; i++){
+        for (int i = x; i <= 100; i++) {
             sum += i;
             counter++;
         }
-        return sum/counter;
+        return sum / counter;
     }
 
     /*9. Creati o metoda in clasa LogicalOp care sa afiseze urmatorul tipar:
 
-*******
+     *******
 
-******
+     ******
 
-*****
+     *****
 
-****
+     ****
 
-***
+     ***
 
-**
+     **
 
-*
+     *
 
 
 
@@ -291,12 +291,221 @@ public class LogicalOperators {
         }
     }
 
+/*LABORATOR 4 WHILE
+  1. Creati o metoda in clasa LogicalOp, care sa primeste un numar ca si parametru. Metoda sa verifice numrul primit,
+  si sa afiseze in consola o numaratoare pana la 100, pornind de la numarul primit ca si parametru. Atentie la crearea tipului metodei,
+  deoarece metoda afiseaza, nu returneaza.*/
+
+    public void counttohundredWhile(int x) {
+        while (x <= 100) {
+            System.out.println(x);
+            x++;
+        }
+
+    }
+    /*2. Creati o metoda in clasa LogicalOp, care sa primeste un numar ca si parametru. Metoda sa verifice
+     numrul primit, si sa afiseze in consola o numaratoare pana la -100, pornind de la numarul primit ca si parametru.
+     Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.*/
+
+    public void countBackwordsWhile(int x) {
+        while (x >= -100) {
+            System.out.println(x);
+            x--;
+        }
+    }
+    /*3. Creati o metoda in clasa LogicalOp, care sa primeste doi parametrii de tip numar. Metoda sa afiseze o numaratoare
+     intre cele doua numere primite, pornind de la primul parametru primit, pana la cel de-al doilea
+     (ex: daca int x e primul parametru iar int y  este cel de-al doilea, numaratoarea sa se faca de la x, la y.
+     Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.*/
+
+    public void countBetween2nr(int x, int y) {
+        while (x <= y) {
+            System.out.println(x);
+            x++;
+        }
+    }
+    /*4. Creati o metoda in clasa LogicalOp, care sa primeste doi parametrii de tip numar. Metoda trebuie sa verifice
+     care dintre cele doua numere este mai mare, si sa execute o numaratoare crescatoare de la cel mai mic la cel mai mare.
+     (ex: daca int x e primul parametru iar int y  este cel de-al doilea, daca x  este mai mare decat y,
+      atunci numaratoarea sa fie de la y la x).
+     Atentie la crearea tipului metodei, deoarece metoda afiseaza, nu returneaza.*/
+
+    public void countBetween(int no1, int no2) {
+        if (no1 < no2) {
+            while (no1 <= no2) {
+                System.out.println(no1);
+                no1++;
+            }
+        } else if (no2 < no1) {
+            while (no2 <= no1) {
+                System.out.println(no2);
+                no2++;
+            }
+        } else System.out.println("The numbers are equal");
+    }
+
+    //5. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele pare de la 1 la 100.
+
+    public void showEvenNumbers() {
+        int number = 1;
+        while (number <= 100) {
+            number++;
+            if (number % 2 == 0) {
+                System.out.println(number);
+            }
+        }
+    }
+
+    //6. Creati o metoda in clasa LogicalOp care sa afiseze toate numerele impare de la 1 la 100.
+
+    public void showUnevenNumbers() {
+        int number = 1;
+        while (number < 100) {
+            number++;
+            if (number % 2 != 0) {
+                System.out.println(number);
+            }
+        }
+    }
+
+/*7. Creati o metoda care sa adune toate numerele din intervalul 111 si 8899. Sa se afiseze suma totala, iar dupa aceea sa se calculeze
+ si afiseze media numerelor din acel interval. Introduceti o variabila int count in metoda, pentru a numara toate numerele din interval.
+ Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.*/
+
+
+    public void getSumandAverageW() {
+        int a = 111;
+        int b = 8899;
+        double sum = 0;
+        int count = 0;
+
+
+        while (a <= b) {
+            sum = (sum + a);
+            a++;
+            count++;
+        }
+        System.out.println(sum);
+        double average = sum / count;
+        System.out.println("The average of the numbers is " + average);
+    }
+
+     /*8. Creati o metoda care sa primeasca doi parametrii de tip numar, si sa returneze media numerelor divizibile cu 7,
+     din acel interval. Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza. */
+
+    public float dividebySevenW(int x, int y) {
+        float sum = 0;
+        float count = 0;
+
+        while (x <= y) {
+            if (x % 7 == 0) {
+                count++;
+                sum = (sum + x);
+            }
+
+            x++;
+        }
+        float average = sum / count;
+        return average;
+    }
+
+    //9. Creati o metoda care sa afiseze primele 20 de numere din sirul lui Fibonacci.
+
+    public void showFibonacisfirst20no() {
+        int count = 20;
+        int no1 = 0;
+        int no2 = 1;
+
+        int i = 1;
+        while (i <= count) {
+            System.out.print(no1 + " ");
+
+            int sumOfPrevTwo = no1 + no2;
+
+            no1 = no2;
+
+            no2 = sumOfPrevTwo;
+
+            i++;
+
+        }
 
     }
 
+    /*
+   10. Creati o metoda numita CozaLozaWoza.
+Metoda va afisa:
+- numerele de la 1 la 110
+- 11 numere pe linie
+- se va afisa Coza pentru numerele care sunt multiplu de 3 (1 2 Coza 4)
+- se va afisa Loza pentru numerele care sunt multiplu de 5 (2 3 4 Loza 6)
+- se va afisa Woza pentru numerele care sunt multiplu de 7 (4 5 6 Woza 8)
 
+- se va afisa CozaLoza pentru numerele care sunt multiplu de 3 SI 5
+- se va afisa CozaWoza pentru multiplu de 3 SI 7
+- se va afisa WozaLoza pentru multiplu de 5 SI 7
+- se va afisa CozaLozaWoza pentru multiplu de 3 SI 5 SI 7
 
+Ar trebui sa arate similar:
 
+1 2 Coza 4 Loza Coza Woza 8 Coza Loza 11
+
+Coza 13 Woza CozaLoza 16 17 Coza 19 Loza CozaWoza 22
+
+23 Coza Loza 26 Coza Woza 29 CozaLoza 31 32 Coza
+     */
+    public void wozaCozaLoza() {
+
+        int i = 1;
+
+        while (i <= 110) {
+
+            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+
+                System.out.print("CozaLozaWoza ");
+
+            } else if (i % 5 == 0 && i % 7 == 0) {
+
+                System.out.print("WozaLoza ");
+
+            } else if (i % 3 == 0 && i % 7 == 0) {
+
+                System.out.print("CozaWoza ");
+
+            } else if (i % 3 == 0 && i % 5 == 0) {
+
+                System.out.print("CozaLoza ");
+
+            } else if (i % 7 == 0) {
+
+                System.out.print("Woza ");
+
+            } else if (i % 5 == 0) {
+
+                System.out.print("Loza ");
+
+            } else if (i % 3 == 0) {
+
+                System.out.print("Coza ");
+
+            } else {
+
+                System.out.print(i + " ");
+
+            }
+
+            if (i % 11 == 0) {
+
+                System.out.println();
+
+            }
+
+            i++;
+        }
+
+    }
+
+}
 
 
 
