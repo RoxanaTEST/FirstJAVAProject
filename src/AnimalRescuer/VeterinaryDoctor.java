@@ -2,8 +2,27 @@ package AnimalRescuer;
 
 public class VeterinaryDoctor {
 
-    String name = "Dr Ionescu";
-    String specialization = "Allergology";
+    private String name ;
+    private String specialization ;
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String Vetsname) {
+      this.name = Vetsname;
+    }
+
+
+
+    public String getSpecialization(){
+        return specialization;
+    }
+
+    public void setSpecialization(String specializationname){
+        this.specialization = specializationname;
+    }
+
 
     public void getacquainted() {
         System.out.println("Getting acquainted with the dog(treats)");

@@ -1,8 +1,24 @@
 package AnimalRescuer;
 
 public class Adopter {
-    String name = "Roxana";
-    double availablemoneyron = 3000;
+    private String name ;
+    private double availablemoneyron ;
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String adoptername) {
+        this.name = adoptername;
+    }
+
+    public double getAvailablemoneyron() {
+        return availablemoneyron;
+    }
+
+    public void setAvailablemoneyron(double adopteravailablemoneyron) {
+        this.availablemoneyron = adopteravailablemoneyron;
+    }
 
     public void rescuesapet(){
         System.out.println("Goes to the dog shelter and adopts a dog");

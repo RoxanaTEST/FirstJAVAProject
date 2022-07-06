@@ -1,13 +1,71 @@
 package AnimalRescuer;
 
 public class Dog {
-    String name = "Tommy";
-    int age = 7;
-    int healthlevel ;
-    int hungerlevel ;
-    int moodlevel ;
-    String favouritefood = "Pedigree";
-    String favouriterecreationalactivity = "ball play";
+    private String name ;
+    private int age;
+    private int healthlevel ;
+    private int hungerlevel ;
+    private int moodlevel ;
+    private String favouritefood ;
+    private String favouriterecreationalactivity;
+
+
+    public String getName(){
+        return name;
+
+    }
+    public void setName(String dogname){
+        this.name = dogname;
+
+    }
+
+    public int getAge(){
+        return age;
+    }
+
+    public void setAge(int dogage){
+        this.age = dogage;
+    }
+
+    public int getHealthlevel(){
+        return healthlevel;
+    }
+
+    public void setHealthlevel(int doghealthlevel){
+        this.healthlevel = doghealthlevel;
+    }
+
+    public int getHungerlevel() {
+        return hungerlevel;
+    }
+
+    public void setHungerlevel(int doghungerlevel) {
+        this.hungerlevel = doghungerlevel;
+    }
+
+    public int getMoodlevel(){
+        return moodlevel;
+    }
+
+    public void setMoodlevel(int dogmoodlevel) {
+        this.moodlevel = dogmoodlevel;
+    }
+
+    public String getFavouritefood() {
+        return favouritefood;
+    }
+
+    public void setFavouritefood(String dogsfavouritefood) {
+        this.favouritefood = dogsfavouritefood;
+    }
+
+    public String getFavouriterecreationalactivity(){
+        return favouriterecreationalactivity;
+    }
+
+    public void setFavouriterecreationalactivity(String dogsfavouriterecreationalactivity) {
+        this.favouriterecreationalactivity = dogsfavouriterecreationalactivity;
+    }
 
     public void eat(){
         System.out.println("Eating dog food");
