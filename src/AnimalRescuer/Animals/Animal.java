@@ -1,21 +1,20 @@
-package AnimalRescuer;
+package AnimalRescuer.Animals;
 
-public class Dog {
+public class Animal {
     private String name ;
     private int age;
     private int healthlevel ;
     private int hungerlevel ;
     private int moodlevel ;
     private String favouritefood ;
-    private String favouriterecreationalactivity;
-
+    private String favouriteactivity;
 
     public String getName(){
         return name;
 
     }
-    public void setName(String dogname){
-        this.name = dogname;
+    public void setName(String name){
+        this.name = name;
 
     }
 
@@ -23,52 +22,52 @@ public class Dog {
         return age;
     }
 
-    public void setAge(int dogage){
-        this.age = dogage;
+    public void setAge(int age){
+        this.age = age;
     }
 
     public int getHealthlevel(){
         return healthlevel;
     }
 
-    public void setHealthlevel(int doghealthlevel){
-        this.healthlevel = doghealthlevel;
+    public void setHealthlevel(int healthlevel){
+        this.healthlevel = healthlevel;
     }
 
     public int getHungerlevel() {
         return hungerlevel;
     }
 
-    public void setHungerlevel(int doghungerlevel) {
-        this.hungerlevel = doghungerlevel;
+    public void setHungerlevel(int hungerlevel) {
+        this.hungerlevel = hungerlevel;
     }
 
     public int getMoodlevel(){
         return moodlevel;
     }
 
-    public void setMoodlevel(int dogmoodlevel) {
-        this.moodlevel = dogmoodlevel;
+    public void setMoodlevel(int moodlevel) {
+        this.moodlevel = moodlevel;
     }
 
     public String getFavouritefood() {
         return favouritefood;
     }
 
-    public void setFavouritefood(String dogsfavouritefood) {
-        this.favouritefood = dogsfavouritefood;
+    public void setFavouritefood(String favouritefood) {
+        this.favouritefood = favouritefood;
     }
 
     public String getFavouriterecreationalactivity(){
-        return favouriterecreationalactivity;
+        return favouriteactivity;
     }
 
     public void setFavouriterecreationalactivity(String dogsfavouriterecreationalactivity) {
-        this.favouriterecreationalactivity = dogsfavouriterecreationalactivity;
+        this.favouriteactivity = favouriteactivity;
     }
 
     public void eat(){
-        System.out.println("Eating dog food");
+        System.out.println("Eating food");
     }
     public void play(){
         System.out.println("playing with the ball");
@@ -79,10 +78,6 @@ public class Dog {
     public void sleep(){
         System.out.println("zzzzz");
     }
-    public void bark(){
-        System.out.println("Ham ham!");
-    }
-
     public void growls(){
         System.out.println("howling when in pain");
     }

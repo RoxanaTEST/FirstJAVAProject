@@ -1,7 +1,14 @@
 
 package AnimalRescuer;
 
-import java.util.Scanner;
+import AnimalRescuer.Activities.RecreationalActivity;
+import AnimalRescuer.Animals.Cat;
+import AnimalRescuer.Animals.Dog;
+import AnimalRescuer.Animals.Monkey;
+import AnimalRescuer.Animals.Rabbit;
+import AnimalRescuer.Food.DogFood;
+import AnimalRescuer.People.Adopter;
+import AnimalRescuer.People.VeterinaryDoctor;
 
 public class AppMain {
     public static void main(String[] args) {
@@ -17,17 +24,11 @@ public class AppMain {
         Tommy.drink();
         Tommy.bark();
 
-        Adopter Roxana = new Adopter();
-        System.out.println(Roxana.getName());
-        Roxana.setName("Roxana");
-
-
-        System.out.println(Roxana.getAvailablemoneyron());
-        Roxana.setAvailablemoneyron(7000);
 
         DogFood Pedigree = new DogFood();
         System.out.println(Pedigree.getStockavailabilitypcs());
         Pedigree.setStockavailabilitypcs(1000);
+
 
         System.out.println(Pedigree.getPriceron());
         Pedigree.setPriceron(30);
@@ -36,9 +37,6 @@ public class AppMain {
         System.out.println(games.getName());
         games.setName("play with the ball");
 
-        VeterinaryDoctor role = new VeterinaryDoctor();
-        System.out.println(role.getSpecialization());
-        role.setSpecialization("Cardiologist");
 
         Cat Cora = new Cat();
         System.out.println(Cora.getName());
@@ -62,8 +60,8 @@ public class AppMain {
         Sissy.setHungerlevel(5);
 
         Sissy.sleep();
-        Sissy.talks();
         Sissy.play();
+        Sissy.jumpintrees();
 
 
         Rabbit Cocky = new Rabbit();
@@ -78,5 +76,33 @@ public class AppMain {
         Cocky.sleep();
         Cocky.drink();
         Cocky.eat();
+
+        Rabbit Luke = new Rabbit();
+        System.out.println(Luke.getName());
+        Luke.setAge(3);
+        Luke.play();
+
+        VeterinaryDoctor Mike = new VeterinaryDoctor();
+        System.out.println(Mike.getName());
+        Mike.treatoffer();
+
+        VeterinaryDoctor role = new VeterinaryDoctor();
+        System.out.println(role.getSpecialization());
+        role.setSpecialization("Cardiologist");
+
+
+
+        Adopter Roxana = new Adopter();
+        System.out.println(Roxana.getName());
+        Roxana.setName("Roxana");
+        Roxana.buydogfood();
+
+
+        System.out.println(Roxana.getAvailablemoneyron());
+        Roxana.setAvailablemoneyron(7000);
+
+
+
+
     }
 }

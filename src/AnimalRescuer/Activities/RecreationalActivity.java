@@ -1,4 +1,4 @@
-package AnimalRescuer;
+package AnimalRescuer.Activities;
 
 public class RecreationalActivity {
     private String name ;

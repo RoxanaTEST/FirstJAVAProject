@@ -1,17 +1,8 @@
-package AnimalRescuer;
+package AnimalRescuer.People;
 
-public class VeterinaryDoctor {
+public class VeterinaryDoctor extends People {
 
-    private String name ;
     private String specialization ;
-
-    public String getName(){
-        return name;
-    }
-
-    public void setName(String Vetsname) {
-      this.name = Vetsname;
-    }
 
 
 
