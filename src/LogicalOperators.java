@@ -504,6 +504,101 @@ Coza 13 Woza CozaLoza 16 17 Coza 19 Loza CozaWoza 22
         }
 
     }
+    // LABORATOR 5 - Arrays
+    /*2.  In clasa LogicalOp, creati o metoda care sa scrie pe un array de 100 de pozitii, valorile de la 1 la 100.
+     Sa se afiseze progresul in consola pe tot parcursul. Apelati metoda in main() pentru a verifica daca
+     functioneaza.*/
+
+    public int[] populateArrayUpToNumber(int number) {
+        int[] array = new int[number];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+        }
+        return array;
+    }
+
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
+
+    /*3. Creati o metoda care primeasca un parametru de tip array de numere intregi gol, si sa il returneze
+    populat cu toate valorile pare de la 1 la 100. Apelati metoda in main() pentru a verifica daca functioneaza.
+    Atentie, metoda returneaza un array, deci acesta va trebui surprins si afisat folosind o bucla. */
+
+
+    public void Evennumbersarray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (i % 2 == 0) {
+                System.out.print(array[i + 1] + " ");
+
+            }
+        }
+
+    }
+
+    /*4. Creati o metoda care sa primeasca un parametru de tip array de numere, si sa fie populat cu valori.
+    Metoda sa calculeze si sa returneze media numerelor din array. Apelati metoda in main() pentru a verifica
+    daca functioneaza.*/
+    public double ArrayAverage(int[] array) {
+
+        double sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return sum / array.length;
+    }
+    /*5. Creati o metoda care sa primeasca un parametru de tip array de string-uri, populat cu valori,
+    si un parametru de tip String. Metoda sa verifice daca valoarea string-ului primit se regaseste in array-ul
+     primit, iar daca da sa returneze true iar daca nu, sa returneze false.  Apelati metoda in main() pentru
+     a verifica daca functioneaza.*/
+
+    public boolean isValueInmyArray(String[] array, String value) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(value)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /*6. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori,
+    si un parametru de tip numar. Metoda sa verifice daca numarul primit se afla in array-ul primit,
+    si daca da, atunci sa returneze pozitia pe care se afla numarul.  Apelati metoda in main() pentru a
+    verifica daca functioneaza.*/
+
+    public boolean NumberinArray(int[] array, int number) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == number) {
+                System.out.println(array[i] - 1);
+            }
+        }
+        return true;
+
+    }
+ /*8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori,
+    si un parametru de tip numar. Metoda sa verifice daca numarul exista in array, si daca da, sa returneze array-ul
+     primit, fara acel numar. Apelati metoda in main() pentru a verifica daca functioneaza.*/
+
+
+    /*public void NoInArray2(int[] numbersarray, int number2) {
+        for (int i = 0; i < numbersarray.length; i++) {
+            if (i == number2) {
+                System.out.println(numbersarray[i] - number2);*/
+
+    public int NoinArray2(int[] numbersarray, int number2) {
+        for (int i = 0; i < numbersarray.length; i++) {
+            if (numbersarray[i] == number2) {
+                int x = numbersarray[i] - number2;
+                System.out.println(x);
+            }
+
+
+        }
+        return 0;
+
+    }
 
 }
 
@@ -513,29 +608,35 @@ Coza 13 Woza CozaLoza 16 17 Coza 19 Loza CozaWoza 22
 
 
 
+   /*7. Creati o metoda care sa afiseze urmatoarea grila, folosind un array:
 
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
+- - - - - - - - - -
 
-
-
-
-
-
-
-
-    /*5.r Creati o metoda care sa primeasca un parametru de tip array de string-uri, populat cu valori,
-    si un parametru de tip String. Metoda sa verifice daca valoarea string-ului primit se regaseste in array-ul primit,
-     iar daca da sa returneze true iar daca nu, sa returneze false.  Apelati metoda in main() pentru a verifica
-     daca functioneaza.*/
-
-    /*public boolean isValueinarray(String[]array,String value){
-        int i;
-        for ( i= 0; i < array.length; i++);{
-            if(array[i].equals(value)){
-                return true;
+public void printStars() {
+        String star = "*";
+        for (int j = 0; j < 7; j++) {
+            for (int i = 7 - j; i >= 1; i--) {
+                System.out.print(star);
             }
+            System.out.println();
         }
     }*/
 
+    /*public void printHyphens(String hyphen){
+        hyphen = " - ";
+        int x[] ={10,10,10,10,10,10,10,10,10,10};
+        for (int i =0; i == x.length;i++){
+            System.out.println(i);
+            System.out.println(); */
 
 
 
@@ -543,6 +644,15 @@ Coza 13 Woza CozaLoza 16 17 Coza 19 Loza CozaWoza 22
 
 
 
+
+
+
+
+
+
+
+/*9  Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array.
+    Apelati metoda in main() pentru a verifica daca functioneaza.*/
 
 
 
