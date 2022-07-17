@@ -3,7 +3,7 @@ package AnimalRescuer.Animals;
 public class Cat extends Animal {
 
 
-    public void meows(){
+    public void speak (){
         System.out.println("Meow!");
     }
 

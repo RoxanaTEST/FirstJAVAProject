@@ -22,7 +22,7 @@ public class AppMain {
         Tommy.setHungerlevel(1);
 
         Tommy.drink();
-        Tommy.bark();
+        Tommy.speak();
 
 
         DogFood Pedigree = new DogFood();
@@ -48,7 +48,7 @@ public class AppMain {
         Cora.setHungerlevel(1);
 
         Cora.drink();
-        Cora.meows();
+        Cora.speak();
 
         Monkey Sissy = new Monkey();
         System.out.println(Sissy.getName());
@@ -101,6 +101,12 @@ public class AppMain {
         System.out.println(Roxana.getAvailablemoneyron());
         Roxana.setAvailablemoneyron(7000);
 
+
+        Monkey Amanda = new Monkey();
+        Amanda.speak();
+
+        Cat Dennise = new Cat();
+        Dennise.speak();
 
 
 

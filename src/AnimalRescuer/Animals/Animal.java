@@ -81,4 +81,8 @@ public class Animal {
     public void growls(){
         System.out.println("howling when in pain");
     }
+
+    public void speak() {
+        System.out.println("Ham ham!");
+    }
 }
