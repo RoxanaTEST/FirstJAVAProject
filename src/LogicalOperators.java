@@ -1,9 +1,11 @@
+
+import java.util.List;
 public class LogicalOperators {
 
 
     /* 3.In clasa LogicalOp, creati o metoda de tip int, care sa se numeasca checkBiggerNumber(), si sa primeasca doua int-uri ca si
-       parametrii. Folosind if - else, verificati in interiorul metode care numar este mai mare, dintre cele doua valori care va vin ca
-       si parametrii, si returnati numarul mai mare. */
+           parametrii. Folosind if - else, verificati in interiorul metode care numar este mai mare, dintre cele doua valori care va vin ca
+           si parametrii, si returnati numarul mai mare. */
     public int checkBiggerNumber(int first, int second) {
         if (first > second) {
             return first;
@@ -577,82 +579,160 @@ Coza 13 Woza CozaLoza 16 17 Coza 19 Loza CozaWoza 22
         return true;
 
     }
+
+    //    7. Creati o metoda care sa afiseze urmatoarea grila, folosind un array:
+
+    public void drawLines() {
+
+        char[] line = {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-',};
+
+
+        for (int i = 0; i <= 10; i++) {
+
+            System.out.println(line);
+
+        }
+
+    }
  /*8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori,
     si un parametru de tip numar. Metoda sa verifice daca numarul exista in array, si daca da, sa returneze array-ul
      primit, fara acel numar. Apelati metoda in main() pentru a verifica daca functioneaza.*/
 
+    public int[] removeNrFromArray(int[] myarray2, int nr) {
 
-    /*public void NoInArray2(int[] numbersarray, int number2) {
-        for (int i = 0; i < numbersarray.length; i++) {
-            if (i == number2) {
-                System.out.println(numbersarray[i] - number2);*/
+        int[] secondArray = new int[myarray2.length];
 
-    public int NoinArray2(int[] numbersarray, int number2) {
-        for (int i = 0; i < numbersarray.length; i++) {
-            if (numbersarray[i] == number2) {
-                int x = numbersarray[i] - number2;
-                System.out.println(x);
-            }
+        int j = 0;
 
+        for (int i = 0; i < myarray2.length; i++) {
+
+            if (myarray2[i] == nr)
+
+                continue;
+
+            secondArray[j++] = myarray2[i];
 
         }
-        return 0;
+
+        int[] finArray = new int[j];
+
+
+        for (int i = 0; i < j; i++)
+
+            finArray[i] = secondArray[i];
+
+        return finArray;
 
     }
 
-}
+
+    //    10. Creati o metoda care sa primeasca doi parametrii: un array populat cu valori, si un array gol.
+
+//    Metoda sa copieze toate valorile din primul array, parcurgandu-l, in cel de-al doilea.
+
+    public int[] copyArray(int[] firstArray, int[] emptyArray) {
 
 
+        for (int i = 0, j = 0; i < firstArray.length; i++) {
 
+            emptyArray[j] = firstArray[i];
 
+            j++;
 
-
-
-   /*7. Creati o metoda care sa afiseze urmatoarea grila, folosind un array:
-
-- - - - - - - - - -
-- - - - - - - - - -
-- - - - - - - - - -
-- - - - - - - - - -
-- - - - - - - - - -
-- - - - - - - - - -
-- - - - - - - - - -
-- - - - - - - - - -
-- - - - - - - - - -
-- - - - - - - - - -
-
-public void printStars() {
-        String star = "*";
-        for (int j = 0; j < 7; j++) {
-            for (int i = 7 - j; i >= 1; i--) {
-                System.out.print(star);
-            }
-            System.out.println();
         }
-    }*/
 
-    /*public void printHyphens(String hyphen){
-        hyphen = " - ";
-        int x[] ={10,10,10,10,10,10,10,10,10,10};
-        for (int i =0; i == x.length;i++){
-            System.out.println(i);
-            System.out.println(); */
+        return emptyArray;
 
+    }
 
+    public void PrintcopyArray(int[] firstArray, int[] emptyArray) {
+        for (int i = 0, j = 0; i <= firstArray.length; i++) {
 
+            emptyArray[j] = firstArray[i];
 
+            j++;
+            System.out.println(emptyArray[j]);
+        }
 
-
-
-
-
+    }
 
 
+    // LAB6
+    //EX 1 in main 6
+    //Ex 2Scrieti o metoda Java, care sa primeasca doi parametrii: un parametru sa fie o lista de numere,
+    // si celalalt un numar (real sau intreg). Metoda sa adauge numarul primit ca si parametru la final de lista.
+
+    public void addgivennumbertomylist(List<Integer> myListofInt, int a) {
+        myListofInt.add(a);
+        System.out.println(myListofInt);
+
+    }
+    // 3.Scrieti o metoda Java, care sa primeasca doi parametrii: un parametru de tip Lista,
+    // iar celalalt un numar intreg. Sa se parcurga lista si sa afiseze, pe rand, toate valorile din lista,
+    // fiecare pe rand nou, pornind de la numarul intreg primit ca si parametru.
+
+    public void printnumberfrombonwards(List<Integer> myListofInt, int b) {
+        myListofInt.add(0, b);
+        for (int value : myListofInt) {
+            System.out.println(value);
+        }
+
+    }
+
+    //4 Scrieti o metoda Java,care sa primeasca parametru o Lista,si sa afiseze, pe rand, toate valorile
+    // din lista,dar invers(de la capat la inceput).
+    public void printNumbersBackwardsFromList(List<Integer> myList) {
+        for (int i = myList.size() - 1; i >= 0; i--) {
+            System.out.println(myList.get(i));
+
+        }
+        //5 Scrieti o metoda Java, care sa primeasca trei parametrii: unul de tip Lista de String-uri, unul de
+        //  tip intreg, si unul de tip String. Metoda sa adauge parametrul de tip String in lista primita, iar
+        //  parametrul de tip intreg reprezinta pozitia la care sa fie pus acel String.
+
+    }
+
+        //6Scrieti o metoda Java, care sa primeasca doi parametrii. Primul dintre ei va fi o Lista,
+        // iar metoda sa ia al doilea parametru si sa il adauge pe prima pozitie din lista.
+        public void addCatthebeginningofmyList(List<Integer> myListofInt, int c) {
+            myListofInt.add(0, c);
+                System.out.println(myListofInt);
+            }
 
 
 
-/*9  Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array.
-    Apelati metoda in main() pentru a verifica daca functioneaza.*/
+        //8  Scrieti o metoda Java care sa primeasca o Lista si sa returneze cel mai mare numar din ea.
+
+        public int getHighestNumber (List<Integer> list) {
+            int max = list.get(0);
+            for (int x : list) {
+                if (x > max) {
+                    max = x;
+                }
+            }
+            return max;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

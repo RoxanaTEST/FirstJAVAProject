@@ -2,7 +2,6 @@ public class Calculator {
     //exercitiul 1
     public static int sum(int a, int b) {
         return a + b;
-
     }
 
     public static double division(double c, double d) {
@@ -47,9 +46,43 @@ public class Calculator {
         double result = a / b;
         return result;
     }
-    public static int divisionremainder (int a,int b){
+
+    public static int divisionremainder(int a, int b) {
         int result = a % b;
         return result;
 
     }
+
+    /*1. In proiectul de Calculator, in clasa Calculator, supraincarcati toate metodele conform principiului
+     polimorfismului. Creati cel putin cate doua metode polimorfe pentru fiecare metoda pe care o aveti in clasa.
+     */
+    public static int sum(int a, int b, int c) {
+        return a + b + c;
+
+    }
+
+    public static double sum(int a, int b, double c) {
+        return a + b + c;
+    }
+
+    public static double division(double c, double d, double c1) {
+        return c / d / c1;
+    }
+
+    public static int sum2(int a, int b, int c2) {
+        int result = a + b + c2;
+        return result;
+    }
+
+    public static int subtraction(int a, int b, int c) {
+        int result = a - b - c;
+        return result;
+    }
+    public static int multiply(int a, int b, int c) {
+        int result = a * b * c;
+        return result;
+
+    }
+
+
 }
