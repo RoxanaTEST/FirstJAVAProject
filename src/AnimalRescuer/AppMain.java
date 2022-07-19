@@ -108,6 +108,9 @@ public class AppMain {
         Cat Dennise = new Cat();
         Dennise.speak();
 
+        Cat Zizu = new Cat();
+        Zizu.speak();
+
 
 
     }
