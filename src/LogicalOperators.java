@@ -671,13 +671,11 @@ Coza 13 Woza CozaLoza 16 17 Coza 19 Loza CozaWoza 22
     // iar celalalt un numar intreg. Sa se parcurga lista si sa afiseze, pe rand, toate valorile din lista,
     // fiecare pe rand nou, pornind de la numarul intreg primit ca si parametru.
 
-    public void printnumberfrombonwards(List<Integer> myListofInt, int b) {
-        myListofInt.add(0, b);
-        for (int value : myListofInt) {
-            System.out.println(value);
-        }
-
+    public void printnumberfrombonwards(List<Integer> myListofInt, int position) {
+        for (int i = position; i < myListofInt.size(); i++)
+            System.out.println(myListofInt.get(i));
     }
+
 
     //4 Scrieti o metoda Java,care sa primeasca parametru o Lista,si sa afiseze, pe rand, toate valorile
     // din lista,dar invers(de la capat la inceput).
@@ -686,35 +684,63 @@ Coza 13 Woza CozaLoza 16 17 Coza 19 Loza CozaWoza 22
             System.out.println(myList.get(i));
 
         }
-        //5 Scrieti o metoda Java, care sa primeasca trei parametrii: unul de tip Lista de String-uri, unul de
-        //  tip intreg, si unul de tip String. Metoda sa adauge parametrul de tip String in lista primita, iar
-        //  parametrul de tip intreg reprezinta pozitia la care sa fie pus acel String.
+
+    }
+    //5 Scrieti o metoda Java, care sa primeasca trei parametrii: unul de tip Lista de String-uri, unul de
+    //  tip intreg, si unul de tip String. Metoda sa adauge parametrul de tip String in lista primita, iar
+    //  parametrul de tip intreg reprezinta pozitia la care sa fie pus acel String.
+
+    public void addStringToMyList(List<String> myList, int index, String text) {
+
+        myList.add(index, text);
+        System.out.println(myList);
 
     }
 
-        //6Scrieti o metoda Java, care sa primeasca doi parametrii. Primul dintre ei va fi o Lista,
-        // iar metoda sa ia al doilea parametru si sa il adauge pe prima pozitie din lista.
-        public void addCatthebeginningofmyList(List<Integer> myListofInt, int c) {
-            myListofInt.add(0, c);
-                System.out.println(myListofInt);
+
+    //6Scrieti o metoda Java, care sa primeasca doi parametrii. Primul dintre ei va fi o Lista,
+    // iar metoda sa ia al doilea parametru si sa il adauge pe prima pozitie din lista.
+    public void addCatthebeginningofmyList(List<Integer> myListofInt, int c) {
+        myListofInt.add(0, c);
+        System.out.println(myListofInt);
+    }
+
+
+    //8  Scrieti o metoda Java care sa primeasca o Lista si sa returneze cel mai mare numar din ea.
+
+    public int getHighestNumber(List<Integer> list) {
+        int max = list.get(0);
+        for (int x : list) {
+            if (x > max) {
+                max = x;
             }
-
-
-
-        //8  Scrieti o metoda Java care sa primeasca o Lista si sa returneze cel mai mare numar din ea.
-
-        public int getHighestNumber (List<Integer> list) {
-            int max = list.get(0);
-            for (int x : list) {
-                if (x > max) {
-                    max = x;
-                }
-            }
-            return max;
         }
-
-
+        return max;
     }
+
+    //5.In clasa LogicalOp, creati o metoda care sa primeasca un array de numere ca si parametru, si un numar.
+    // Fara a folosi conditii, si folosind un try-catch, afisati valoarea de pe pozitia numarului primit,
+    // iar daca valoarea numarului este mai mare decat numarul de pozitii din array, afisati textul: "Inside catch, number too large".
+
+    public void readArrayIndex(int[] array, int number) {
+        try {
+            System.out.println(array[number]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Inside catch, number too large");
+        }
+    }
+    //6. In clasa LogicalOp, creati o metoda  'wait()'.
+    // Metoda sa nu returneze nimic, dar sa primeasca un parametru de tip int. In interiorul ei,
+    // tratati metoda Thread.sleep(), astfel incat metoda noastra sa primeasca valoarea in secunde, cat sa astepte.
+    // Ex: wait(5) -> asteapta 5 secunde.
+    public void wait(int seconds){
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
 
 
 
