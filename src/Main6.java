@@ -48,17 +48,23 @@ public class Main6 {
 
         LogicalOperators op = new LogicalOperators();
 
-       op.addgivennumbertomylist(myListOfInt, 70);
+        op.addgivennumbertomylist(myListOfInt, 70);
 
         // 3
 
 
-        op.printnumberfrombonwards(myListOfInt, 100);
+        op.printnumberfrombonwards(myListOfInt, 7);
 
         //4
         op.printNumbersBackwardsFromList(myListOfInt);
 
         //5
+       /* List<String> myList = new ArrayList<>();
+       String[]ArrayList = {"mere","pere","banane","portocale"};
+        int index = 3;
+        String text = "cirese";
+        op.addStringToMyList(index,text);*/
+
 
         //6
         op.addCatthebeginningofmyList(myListOfInt,90);

@@ -63,5 +63,14 @@ public class Main {
 
         System.out.println("test");
 
+        System.out.println("Miercuri am interviu");
+
+        int a2, a3, a4;
+        a2 = 10;
+        a3 = 15;
+        a4 = 22;
+        System.out.println(a2+a3+a4);
+
+
     }
 }

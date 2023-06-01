@@ -1,5 +1,15 @@
 public class Main2 {
     public static void main(String[] args) {
+         /*1. In proiectul de Calculator, in clasa Calculator, supraincarcati toate metodele conform principiului
+         polimorfismului. Creati cel putin cate doua metode polimorfe pentru fiecare metoda pe care o aveti in clasa.
+         */
+        System.out.println(Calculator.sum(7, 8,10));
+        System.out.println(Calculator.sum(7, 99 ,100));
+        System.out.println(Calculator.division(50,10,1));
+        System.out.println(Calculator.sum2(90,700,10));
+        System.out.println(Calculator.subtraction(900,50,850));
+        System.out.println(Calculator.multiply(5,10,50));
+
         //exercitiul 1
         System.out.println(String1.Printmyname());
         System.out.println(String1.poezie());
@@ -48,6 +58,8 @@ public class Main2 {
         //exercitiul 8
         Distance dist = new Distance();
         dist.calculatedistance();
+
+
     }
 
 

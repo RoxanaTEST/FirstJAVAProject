@@ -13,6 +13,9 @@ public abstract class Animal {
         return name;
 
     }
+    public String readName(){
+        return name;
+    }
     public void setName(String name){
         this.name = name;
 

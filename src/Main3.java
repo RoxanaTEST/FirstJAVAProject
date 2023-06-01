@@ -96,7 +96,7 @@ public class Main3 {
          Apelati metoda in main() pentru a verifica daca functioneaza*/
 
         int no1=30;
-        int no2=100;
+        int no2=99;
         int no3=10;
         System.out.println(op.biggerNumber1(no1,no2,no3));
         System.out.println("\n");

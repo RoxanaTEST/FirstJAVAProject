@@ -4,62 +4,62 @@ public class Main4 {
 
         LogicalOperators op = new LogicalOperators();
 
-        //int x = 6;
-        //op.Printtohundred(x);
+        int x = 6;
+        op.Printtohundred(x);
 
 
-        //float x1 = -160;
-        //op.Printtohundred2(x1);
-
-
-
-        //int number1 = 40;
-        //int number2 = 20;
-        //op.countBetweentwonumbers(number1,number2);
+        float x1 = -160;
+        op.Printtohundred2(x1);
 
 
 
-        // int nr1 = 25 ;
-        // int nr2 = 8;
-        //op.Printfromnr1tonr2(nr1,nr2);
+        int number1 = 40;
+        int number2 = 20;
+        op.countBetweentwonumbers(number1,number2);
 
 
-        //op.displayEvenNo();
+
+         int nr1 = 25 ;
+         int nr2 = 8;
+        op.Printfromnr1tonr2(nr1,nr2);
 
 
-        //op.displayUnevenNo();
+        op.displayEvenNo();
 
 
-        //System.out.println(op.getSum(98));
+        op.displayUnevenNo();
 
 
-        // System.out.println(op.getAverage(60));
+        System.out.println(op.getSum(98));
 
 
-        //op.printStars();
+         System.out.println(op.getAverage(60));
+
+
+        op.printStars();
 
 
         // //Tema web 4- WHILE
 
-        //op.counttohundredWhile(88);
+        op.counttohundredWhile(88);
 
-        //op.countBackwordsWhile(-80);
+        op.countBackwordsWhile(-80);
 
-        //op.countBetween2nr(20,80);
+        op.countBetween2nr(20,80);
 
-        //op.countBetween(170,180);
+        op.countBetween(170,180);
 
-        //op.showEvenNumbers();
+        op.showEvenNumbers();
 
-        //op.showUnevenNumbers();
+        op.showUnevenNumbers();
 
-        //op.getSumandAverageW();
+        op.getSumandAverageW();
 
-        //System.out.println(op.dividebySevenW(1,30));
+        System.out.println(op.dividebySevenW(1,30));
 
-        //op.showFibonacisfirst20no();
+        op.showFibonacisfirst20no();
 
-       // op.wozaCozaLoza();
+        op.wozaCozaLoza();
 
     }
 

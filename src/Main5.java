@@ -28,12 +28,16 @@ public class Main5 {
                op.NumberinArray(numbersarray,5);
 
 
+               //7
+
+               op.drawLines();
 
 
-               /* 8
-               int[] numbersarray = {14,56,102,55,8900,4000,1,2,3};
-               int number2 = 14;
-               System.out.println(op.NoinArray2(numbersarray,number2));*/
+               // 8
+               int[] myarray2 = {14,56,102,55,8900,4000,1,2,3};
+               int nr = 14;
+               op.removeNrFromArray(myarray2,nr);
+
 
 
 
@@ -45,10 +49,21 @@ public class Main5 {
                     int min2 = array[1];
                     System.out.println(min2);
 
+
+                    //10
+        int[]firstArray = {67,99,44,5};
+        int[]emptyArray = firstArray;
+
+        op.PrintcopyArray(firstArray,emptyArray);
+
                }
 
 
     }
+
+
+
+
 
 
 
