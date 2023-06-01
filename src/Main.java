@@ -61,6 +61,15 @@ public class Main {
 
         System.out.println("La steaua care-a rasarit\n" + "E o cale atat de lunga\n" + "Ca mii de ani i-au trebuit\n" + "Luminii sa ne-ajunga\n" +"\n" + "Poate de mult s-a stins în drum\n" + "În depărtări albastre,\n" + "Iar raza ei abia acum\n" + "Luci vederii noastre,");
 
+        System.out.println("test");
+
+        System.out.println("Miercuri am interviu");
+
+        int a2, a3, a4;
+        a2 = 10;
+        a3 = 15;
+        a4 = 22;
+        System.out.println(a2+a3+a4);
 
 
     }
